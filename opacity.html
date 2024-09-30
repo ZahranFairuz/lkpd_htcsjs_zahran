@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mengganti opacity</h1>
+    
+    <label for="fotoSelect">Ganti Foto:</label>
+    <select id="fotoSelect">
+        <option value="img/Kepulauan Seribu.avif">Foto 1</option>
+        <option value="img/Pulau Bintan.avif">Foto 2</option>
+        <option value="img/Raja ampat.avif">Foto 3</option>
+    </select>
+    
+    <label for="opacitySelect">Ganti opacity:</label>
+    <select id="opacitySelect">
+        <option value="1">1 (Buram)</option>
+        <option value="0.5">0.5 (Semi transparent)</option>
+        <option value="0.2">0.2 (Sebagian transparent)</option>
+    </select>
+    
+    <button onclick="updateImage()">Tambahkan Perubahan</button>
+    
+    <h2>Hasil</h2>
+    <div id="Hasil">
+        <img id="hasilImg" src="img/Kepulauan Seribu.avif" style="opacity: 1;">
+    </div>
+    
+    <script>
+        function updateImage() {
+            const fotoSelect = document.getElementById('fotoSelect');
+            const opacitySelect = document.getElementById('opacitySelect');
+            const hasilImg = document.getElementById('hasilImg');
+            
+            const selectedImage = fotoSelect.value;
+            const selectedOpacity = opacitySelect.value;
+            
+            hasilImg.src = selectedImage;
+            hasilImg.style.opacity = selectedOpacity;
+        }
+    </script>
+</body>
+</html>

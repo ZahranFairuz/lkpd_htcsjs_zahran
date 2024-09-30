@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<button onclick="showCountdown()">Munculkan Alert</button>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <p id="countdownText"></p>
+    </div>
+</div>
+
+<script>
+    function showCountdown() {
+        const modal = document.getElementById("myModal");
+        const countdownText = document.getElementById("countdownText");
+        let count = 5;
+
+        modal.style.display = "block";
+        countdownText.innerText =`Danger! Alert akan tertutup dalam ${count}`;
+
+        const countdownInterval = setInterval(() => {
+            count--;
+            if (count > 0) {
+                countdownText.innerText = count;
+            } else {
+                clearInterval(countdownInterval);
+                modal.style.display = "none";
+            }
+        }, 1000);
+    }
+
+</script>
+</body>
+</html>

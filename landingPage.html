@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Document</title>
+    <style>
+     *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+.navigasi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.navList ul {
+    display: flex;
+    list-style: none;
+}
+
+.navList ul li {
+    margin-left: 100px;
+}
+
+.navList ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.navList ul li a:hover {
+    color: white;
+    background-color: rgb(243, 166, 0);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.destinasi {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 1225px;
+    background-color: #fff;
+    transition: transform 0.2s ease-in-out;
+    overflow: auto;
+}
+
+.destinasi img {
+    width: 500px;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 300px;
+}
+
+.destinasi h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.button {
+    background-color:rgb(243, 166, 0); 
+    border: none; 
+    color: white; 
+    padding: 15px 32px; 
+    text-align: center;
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin-top: 120px;
+    margin-left: 500px;
+    cursor: pointer; 
+    border-radius: 12px; 
+    transition-duration: 0.4s; 
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(243, 166, 0); 
+}
+
+
+    </style>
+</head>
+<body>
+    <header class="navigasi">
+        <div class="logo">Landing Page</div>
+        <nav class="navList">
+            <ul>
+                <li><a href="#binTan">Pulau Bintan</a></li>
+                <li><a href="#seRibu">Pulau Seribu</a></li>
+                <li><a href="amPat">Pulau Ampat</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="binTan" class="destinasi">
+        <h2>Pulau Bintan</h2>
+        <img src="img/Pulau Bintan.avif" alt="">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error deleniti veritatis corrupti possimus unde, dicta provident qui laborum nam officiis recusandae vel voluptatibus aperiam odit quidem cupiditate! Adipisci, laboriosam minima.</p>
+        <a href="" class="button">Read More</a>
+        <p class="toTal">Viewer: 145 | Comment: 23</p>
+    </section>
+    <section id="seRibu" class="destinasi">
+        <h2>Pulau Seibu</h2>
+        <img src="img/Pulau Bintan.avif" alt="">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error deleniti veritatis corrupti possimus unde, dicta provident qui laborum nam officiis recusandae vel voluptatibus aperiam odit quidem cupiditate! Adipisci, laboriosam minima.</p>
+        <a href="" class="button">Read More</a>
+        <p class="toTal">Viewer: 145 | Comment: 23</p>
+    </section>
+    <section id="amPat" class="destinasi">
+        <h2>Pulau Ampat</h2>
+        <img src="img/Pulau Bintan.avif" alt="">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error deleniti veritatis corrupti possimus unde, dicta provident qui laborum nam officiis recusandae vel voluptatibus aperiam odit quidem cupiditate! Adipisci, laboriosam minima.</p>
+        <a href="" class="button">Read More</a>
+        <p class="toTal">Viewer: 145 | Comment: 23</p>
+    </section>
+</body>
+</html>

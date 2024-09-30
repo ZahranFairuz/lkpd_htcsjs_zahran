@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="data">
+    <h1>Mencari Data</h1>
+    
+    <form id="searchForm">
+        <input type="text" id="searchInput">
+        <button type="submit">Submit</button>
+    </form>
+    
+    <div id="resultContainer" class="output">Tidak Mencari Data...
+    </div> 
+
+    </div>
+    
+    <script>
+        document.getElementById('searchForm').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+    
+    var searchValue = document.getElementById('searchInput').value;
+    var resultDiv = document.getElementById('resultContainer');
+    
+    if (searchValue) {
+        resultDiv.textContent = `Mencari data ${searchValue}...`;
+    } else {
+        resultDiv.textContent = 'Tidak Mencari Data...';
+    }
+        });
+    </script>
+</body>
+</html>
